@@ -435,7 +435,7 @@
 }
 
 .form-second-box {
-    background-image: url(/imgs/Official\ Form\ Image.png);
+    background-image: url(../imgs/Official\ Form\ Image.png);
     background-size: cover;
     background-position: center;
 }
