@@ -10,6 +10,11 @@
     padding: 0;
 }
 
+:focus {
+    outline: none;
+    border: none;
+}
+
 /* Header Section */ 
 
 .header {
@@ -435,7 +440,7 @@
 }
 
 .form-second-box {
-    background-image: url(../imgs/Official\ Form\ Image.png);
+    background-image: url(../imgs/official-form-img.png);
     background-size: cover;
     background-position: center;
 }
