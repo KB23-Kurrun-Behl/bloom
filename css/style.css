@@ -19,7 +19,7 @@
 
 .header {
     align-items: center;
-    background-color: #6BEE7E;
+    background-color: #439950;
     display: flex;
     height: 3rem;
     justify-content: center;
@@ -29,7 +29,7 @@
 .main-navig-list {
     align-items: center;
     display: flex;
-    gap: 3rem;
+    gap: 5rem;
     list-style: none;
 }
 
@@ -37,7 +37,7 @@
     display: inline-block;
     color: #FFFFFF;
     font-family: "Climate Crisis", sans-serif;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 100;
     letter-spacing: 0.05rem;
     text-decoration: none;
@@ -451,4 +451,105 @@
 
 /* Media Queries */
 
+@media screen and (max-width: 37.5em) {
 
+.header {
+    padding: 10rem 3rem;
+}
+
+.main-navig-list {
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.main-navig-link {
+    font-size: 1.3rem;
+}
+
+.index {
+    display: grid;
+    flex-direction: column;
+}
+
+.index-heading {
+    font-size: 3.8rem;
+}
+
+.btn {
+    font-size: 0.9rem;
+}
+
+.quote-heading {
+    font-size: 3rem;
+}
+
+.quote-sub-heading {
+    font-size: 2rem;
+}
+
+.quote-text {
+    font-size: 2rem;
+}
+
+.audio {
+    max-width: 28rem;
+}
+
+#audio-cover-art {
+    width: 16rem;
+}
+
+#audio-name {
+    font-size: 1.3rem;
+}
+
+.audio-controls-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.fa-play, .fa-pause, .fa-backward, .fa-circle-info {
+    font-size: 1.3rem;
+}
+
+.plan-heading {
+    font-size: 3.8rem;
+}
+
+.day {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 5rem 3rem;
+}
+
+.day-heading {
+    font-size: 3rem;
+}
+
+.activity-heading {
+    font-size: 3.8rem;
+}
+
+.contact {
+    display: flex;
+    grid-template-columns: 1fr;
+}
+
+.form-box input, .form-box select, .form-box textarea {
+    appearance: none;
+    border: none;
+    color: #000000;
+    font-family: "Google Sans Flex", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 300;
+    padding: 1.5rem;
+    width: 100%;
+}
+
+.form-box textarea {
+    height: 17rem;
+    width: 20rem;
+    resize: none;
+}
+}
