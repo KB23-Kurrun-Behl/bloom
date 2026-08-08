@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis:YEAR@1979&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="imgs/favicon.ico">
+    <title>BLOOM</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="main-navig">
+            <ul class="main-navig-list">
+                <li><a href="index.html" class="main-navig-link">HOME</a></li>
+                <li><a href="schedule.html" class="main-navig-link">SCHEDULE</a></li>
+                <li><a href="activity.html" class="main-navig-link">ACTIVITY</a></li>
+                <!-- <li><a href="index.html" class="main-navig-link">EXERCISES</a></li> -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="section-index">
+            <div class="index">
+                <div class="index-first-box">
+                    <h1 class="index-heading">BLOOM</h1>
+                    <a href="plan.html" class="btn btn-full">MY SCHEDULE <i class='far fa-arrow-alt-circle-right'></i></a>
+                    <a href="index.html" class="btn btn-outline btn-margin-left">BLOOM NOW <i class='fas fa-seedling'></i></a>
+                </div>
+            </div>
+        </section>
+        <section class="section-quote">
+            <div class="quote">
+                <div class="quote-first-box">
+                    <h1 class="quote-heading">BLOOM NOW</h1>
+                    <h2 class="quote-sub-heading"><span class="bold">Listen</span> To The Music And <span class="bold">Repeat</span> The Quote <br> Before Your Session</h2>
+                    <h2 class="quote-sub-heading no-margin-bottom">Remember <span class="bold">Mum</span> - </h2>
+                    <p class="quote-text"><span class="bold">Discipline</span> Is Just <span class="bold">Choosing</span> Between <br> What You Want <span class="bold">Now</span> And What You Want <span class="bold">Most</span></p>
+                </div>
+            </div>
+        </section>
+        <section class="section-audio">
+            <div class="audio">
+                <audio id="audio-track">
+                    <source src="music/Suite New Day - Spider-Man Brand New Day.mp3" type="audio/mp3">
+                </audio>
+                <div class="audio-first-box">
+                    <img id="audio-cover-art" src="imgs/Spider-Man Brand New Day Cover.jpg">
+                </div>
+                <div class="audio-second-box">
+                    <p id="audio-name">Suite New Day <br> <span class="bold">Spider-Man Brand New Day <br> Original Soundtrack</span></p>
+                </div>
+                <div class="audio-controls-box">
+                    <a class="fa-play" id="play-button" onclick="playAudio()">Play <i class='far fa-play-circle'></i></a>
+                    <a class="fa-pause" id="pause-button" onclick="pauseAudio()">Pause <i class='far fa-pause-circle'></i></a>
+                    <a class="fa-backward" id="restart-button" onclick="restartAudio()">Restart <i class='far fa-stop-circle'></i></a>
+                </div>
+                <div class="call-to-action-box">
+                    <a href="schedule.html" class="btn btn-full">BEGIN NOW</a>
+                </div>
+            </div>
+        </section>
+        <footer class="section-footer">
+            <div class="footer">
+                <div class="footer-information">BLOOM NOW<span class="copyright">&copy;</span></div>
+            </div>
+        </footer>
+    </main>
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/cd87449f3b.js" crossorigin="anonymous"></script>
+</body>
+</html>

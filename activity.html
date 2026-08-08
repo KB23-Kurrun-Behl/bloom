@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis:YEAR@1979&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="imgs/favicon.ico">
+    <title>BLOOM</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="main-navig">
+            <ul class="main-navig-list">
+                <li><a href="index.html" class="main-navig-link">HOME</a></li>
+                <li><a href="schedule.html" class="main-navig-link">SCHEDULE</a></li>
+                <li><a href="activity.html" class="main-navig-link">ACTIVITY</a></li>
+                <!-- <li><a href="index.html" class="main-navig-link">EXERCISES</a></li> -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="section-activity">
+            <div class="activity">
+                <div class="activity-first-box">
+                    <h1 class="activity-heading">ACTIVITY</h1>
+                    <a class="btn btn-full btn-no-hover btn-no-border">ACHIEVE YOUR IMPOSSIBLE</a>
+                </div>
+            </div>
+        </section>
+        <section class="section-form">
+            <div class="form">
+                <div class="contact">
+                    <div class="form-first-box">
+                        <div class="form-box">
+                            <div>
+                                <!-- <label for="activity-title">Title</label> -->
+                                <input id="activity-title" type="text" placeholder="Walk Session 01" name="Activity Title" onkeyup="sendForm()" required>
+                            </div>
+                            <div>
+                                <!-- <label>Type</label> -->
+                                <select id="activity-type" name="Activity Type" onkeyup="sendForm()" required>
+                                    <option value="">Please Choose</option>
+                                    <option value="Walk">Walk</option>
+                                    <option value="Strength">Strength</option>
+                                </select>
+                            </div>
+                            <div>
+                                <!-- <label for="activity-information">Overview</label> -->
+                                <textarea id="activity-information" class="information-box" placeholder="The Activity Today Was" name="Activity Overview" onkeyup="sendForm()" required></textarea>
+                            </div>
+                            <a href="" id="log"><button type="submit" class="btn btn-outline btn-align-end" href="">LOG NOW</button></a>
+                        </div>
+                    </div>
+                    <div class="form-second-box" role="img"></div>
+                </div>
+            </div>
+        </section>
+        <footer class="section-footer">
+            <div class="footer">
+                <div class="footer-information">BLOOM NOW<span class="copyright">&copy;</span></div>
+            </div>
+        </footer>
+    </main>
+<script>
+    function sendForm() {
+    var link = document.getElementById("log");
+    let activityTitle = document.getElementById("activity-title").value;
+    let activityType = document.getElementById("activity-type").value;
+    let activityInformation = document.getElementById("activity-information").value;
+    var subject = "BLOOM Progress"
+    var message = "Activity Title: " + activityTitle + "%0D%0A" + "Activity Type: " + activityType + "%0D%0A" + "Activity Overview: " + activityInformation;
+    var email = "kurrunbehl@hotmail.com";
+    var href = "mailto:" + email + "?subject=" + subject + "&body=" + message;
+    console.log(href);
+    link.setAttribute("href", href);
+}
+</script>
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/cd87449f3b.js" crossorigin="anonymous"></script>
+</body>
+</html>
