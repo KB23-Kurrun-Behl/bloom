@@ -71,6 +71,13 @@
     margin-bottom: 3rem;
 }
 
+.index-buttons {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
 .btn {
     cursor: pointer;
     font-family: "Climate Crisis", sans-serif;
@@ -475,20 +482,24 @@
     font-size: 3.8rem;
 }
 
+.index-buttons {
+    flex-direction: column;
+}
+
 .btn {
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .quote-heading {
-    font-size: 3rem;
+    font-size: 2.3rem;
 }
 
 .quote-sub-heading {
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 .quote-text {
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 .audio {
@@ -514,42 +525,56 @@
 }
 
 .plan-heading {
-    font-size: 3.8rem;
+    font-size: 3rem;
 }
 
 .day {
     display: grid;
     grid-template-columns: 1fr;
-    padding: 5rem 3rem;
+    padding: 5rem 0;
 }
 
 .day-heading {
-    font-size: 3rem;
+    font-size: 2.7rem;
+}
+
+.day-information {
+    font-size: 1.6rem;
+}
+
+.call-to-action-text {
+    font-size: 1.6rem;
 }
 
 .activity-heading {
-    font-size: 3.8rem;
+    font-size: 3.4rem;
 }
 
 .contact {
-    display: flex;
     grid-template-columns: 1fr;
 }
 
+.form-first-box {
+    padding: 3rem 3rem;
+}
+
 .form-box input, .form-box select, .form-box textarea {
-    appearance: none;
-    border: none;
-    color: #000000;
-    font-family: "Google Sans Flex", sans-serif;
     font-size: 1.1rem;
-    font-weight: 300;
     padding: 1.5rem;
     width: 100%;
 }
 
 .form-box textarea {
     height: 17rem;
-    width: 20rem;
+    width: 100%;
     resize: none;
+}
+
+.footer-information {
+    font-size: 2rem;
+}
+
+.copyright {
+    font-size: 1.6rem;
 }
 }
